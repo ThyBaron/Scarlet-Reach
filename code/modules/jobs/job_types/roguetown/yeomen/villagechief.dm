@@ -12,6 +12,7 @@
 		/datum/species/lamia,
 	)
 	allowed_ages = list(AGE_OLD)
+	job_traits = list(TRAIT_PEASANTMILITIA, TRAIT_SEEPRICES_SHITTY, TRAIT_EMPATH)
 	tutorial = "You are as venerable and ancient as the trees themselves, wise even for your years spent with the first Wardens. The people look up to you both as a teacher and a guide to solve lesser issues before violence is involved. Not everything must end in bloodshed, no matter how much the retinue wish it were the case. Lead your fellow townsfolk in these troubling times lest they incur wrath of the nobility with their ignorance."
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/elder
@@ -67,9 +68,6 @@
 	H.change_stat("speed", -1)
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", 3)
-	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
-	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) //Spar with the old village grandpa
 	if(should_wear_femme_clothes(H))//Village grandma look.
 		head = /obj/item/clothing/head/roguetown/chaperon/greyscale/elder
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress

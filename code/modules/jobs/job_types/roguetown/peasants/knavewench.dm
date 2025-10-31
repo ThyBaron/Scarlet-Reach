@@ -17,7 +17,7 @@
 	max_pq = null
 	round_contrib_points = 2
 
-	job_traits = list(TRAIT_CICERONE)
+	job_traits = list(TRAIT_CICERONE, TRAIT_PEASANTMILITIA)
 
 	advclass_cat_rolls = list(CTAG_TAPSTER = 2)
 	job_subclasses = list(

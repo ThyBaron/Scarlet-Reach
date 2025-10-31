@@ -38,6 +38,8 @@
 	if(I)
 		if(I.wlength == WLENGTH_SHORT)
 			chance2hit += 10
+		if(I.item_flags & PEASANT_WEAPON && HAS_TRAIT(user, TRAIT_PEASANTMILITIA))
+			chance2hit += 8 //+1 skill equivalent
 
 	if(user.STAPER > 10)
 		chance2hit += (min((user.STAPER-10)*8, 40))
@@ -229,6 +231,11 @@
 					var/mob/living/carbon/human/SH = H
 					var/sentinel = SH.calculate_sentinel_bonus()
 					prob2defend += sentinel
+
+			if(used_weapon.item_flags & PEASANT_WEAPON && HAS_TRAIT(H, TRAIT_PEASANTMILITIA))
+				prob2defend += 20 //Identical to +1 defender skill
+			if(intenty.masteritem && intenty.masteritem.item_flags & PEASANT_WEAPON && HAS_TRAIT(U, TRAIT_PEASANTMILITIA))
+				prob2defend -= 20 //Identical to +1 attacker skill
 
 			if(HAS_TRAIT(H, TRAIT_CURSE_RAVOX))
 				prob2defend -= 30

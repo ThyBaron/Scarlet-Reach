@@ -16,7 +16,7 @@
 	max_pq = null
 	round_contrib_points = 2
 
-	job_traits = list(TRAIT_CICERONE)
+	job_traits = list(TRAIT_CICERONE, TRAIT_PEASANTMILITIA)
 
 	advclass_cat_rolls = list(CTAG_COOK = 2)
 	job_subclasses = list(
@@ -30,9 +30,9 @@
 	category_tags = list(CTAG_COOK)
 
 	subclass_stats = list(
-		STATKEY_CON = 1,
-		STATKEY_INT = 1,
-		STATKEY_SPD = 2
+		STATKEY_INT = 2,
+		STATKEY_CON = 2,
+		STATKEY_END = 1
 	)
 
 	subclass_skills = list(

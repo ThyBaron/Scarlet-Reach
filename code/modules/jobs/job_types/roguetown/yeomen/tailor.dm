@@ -31,7 +31,7 @@
 	outfit = /datum/outfit/job/roguetown/tailor/basic
 	category_tags = list(CTAG_TAILOR)
 
-	traits_applied = list(TRAIT_DYES)
+	traits_applied = list(TRAIT_DYES, TRAIT_PEASANTMILITIA)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 1,
