@@ -4,6 +4,7 @@
 	color_key_name = "Tail"
 	relevant_layers = list(BODY_FRONT_LAYER, BODY_BEHIND_LAYER)
 	var/can_wag = FALSE
+	var/can_suck = FALSE
 
 /datum/sprite_accessory/tail/is_visible(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	return is_human_part_visible(owner, HIDETAIL)
@@ -250,6 +251,7 @@
 	name = "Tentacle"
 	icon_state = "tentacle"
 	can_wag = TRUE
+	can_suck = TRUE
 
 /datum/sprite_accessory/tail/tiger
 	name = "Tiger"
@@ -287,6 +289,7 @@
 /datum/sprite_accessory/tail/spade
 	name = "Succubus Spade Tail"
 	icon_state = "spade"
+	can_suck = TRUE
 
 /datum/sprite_accessory/tail/leopard
 	name = "Leopard"
@@ -352,6 +355,7 @@
 	icon_state = "hearttail"
 	color_key_defaults = list(KEY_SKIN_COLOR)
 	can_wag = TRUE
+	can_suck = TRUE
 
 /datum/sprite_accessory/tail/tiefling/spade
 	name = "Spade"
