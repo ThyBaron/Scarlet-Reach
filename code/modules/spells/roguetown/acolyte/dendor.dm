@@ -81,6 +81,7 @@
 	associated_skill = /datum/skill/magic/holy
 	invocation = "Treefather light the way."
 	invocation_type = "whisper" //can be none, whisper, emote and shout
+	miracle = TRUE
 	devotion_cost = 30
 
 /obj/effect/proc_holder/spell/targeted/conjure_glowshroom/cast(list/targets, mob/user = usr)
@@ -107,6 +108,7 @@
 	cast_without_targets = TRUE
 	sound = 'sound/items/dig_shovel.ogg'
 	associated_skill = /datum/skill/magic/holy
+	miracle = TRUE
 
 /obj/effect/proc_holder/spell/targeted/conjure_vines/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -131,6 +133,7 @@
 	recharge_time = 600
 	ignore_cockblock = TRUE
 	use_language = TRUE
+	miracle = TRUE
 	var/first_cast = FALSE
 
 /obj/effect/proc_holder/spell/self/howl/call_of_the_moon/cast(mob/living/carbon/human/user)

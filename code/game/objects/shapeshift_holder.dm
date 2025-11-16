@@ -86,10 +86,10 @@
 
 	if(shape && shape.mind)
 		shape.mind?.transfer_to(stored)
-		// Restore spell list after mind transfer
-		if(shape.mind.can_store_spells && shape.mind.stored_transformation_spells)
-			shape.mind.restore_spell_list(shape.mind.stored_transformation_spells)
-			shape.mind.stored_transformation_spells = null
+		// Restore spell list after mind transfer (use stored.mind since mind has transferred)
+		if(stored.mind && stored.mind.can_store_spells && stored.mind.stored_transformation_spells)
+			stored.mind.restore_spell_list(stored.mind.stored_transformation_spells)
+			stored.mind.stored_transformation_spells = null
 	if(death)
 		stored.death()
 	else if(stored && source.convert_damage)
