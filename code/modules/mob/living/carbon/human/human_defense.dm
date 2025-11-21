@@ -46,6 +46,9 @@
 				// Apply multiplier if the blessing is active.
 				intdamage = round(intdamage * bless.cursed_item_intdamage)
 		used.take_damage(intdamage, damage_flag = d_type, sound_effect = FALSE, armor_penetration = 100)
+		if(damage)
+			if(blade_dulling == BCLASS_PEEL)
+				used.peel_coverage(def_zone, peeldivisor)
 	if(physiology)
 		protection += physiology.armor.getRating(d_type)
 	return protection
