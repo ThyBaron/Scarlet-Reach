@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	allowed_races = RACES_SECOND_CLASS_NO_GOLEM
+	allowed_races = RACES_SECOND_CLASS_SERVILE
 	disallowed_races = list(
 		/datum/species/lamia,
 		/datum/species/harpy,

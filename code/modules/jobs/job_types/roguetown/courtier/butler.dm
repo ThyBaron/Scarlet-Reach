@@ -6,7 +6,7 @@
 	advjob_examine = TRUE
 	total_positions = 1
 	spawn_positions = 1
-	allowed_races = RACES_SECOND_CLASS_NO_GOLEM
+	allowed_races = RACES_SECOND_CLASS_SERVILE
 	disallowed_races = list(
 		/datum/species/lamia,
 	)
